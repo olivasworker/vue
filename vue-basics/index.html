@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Basics</title>
+    <style>
+        body{
+            background-color: #F3EDC8;
+        }
+        .box{
+            padding: 100px 0;
+            text-align: center;
+            background-color: #EAD196;
+            width: 300px;
+            margin: 20px;
+        }
+        .master-box{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        li.fav{
+            background-color: #7D0A0A;
+        }
+        li{
+            padding:10px 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #BF3131;
+            margin-bottom: 20px;
+            flex-direction: row;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>App1</h1>
+    <div id="app">
+        <!-- <div v-if="showBooks">{{title}} - {{author}} - {{age}}</div> -->
+        <a v-bind:href="url">My website</a>
+        <div v-if="showBooks">
+            <ul>
+                <li v-for="book in books" :class="{ fav: book.isFav }" @click="toogleFav(book)">
+                    <h3>{{book.title}}</h3>
+                    <p>{{book.author}}</p>
+                    <p><a :href="book.url" target="_blank">Link</a></p>
+                    <img :src="book.img" :alt="book.title" style="width: 100px;height: 100px;">
+                </li>
+            </ul>
+        </div>
+        <h4>My favourites books</h4>
+        <div v-if="showBooks">
+            <ul>
+                <li v-for="book in filteredBooks" :class="{ fav: book.isFav }" @click="toogleFav(book)">
+                    <h3>{{book.title}}</h3>
+                    <p>{{book.author}}</p>
+                    <p><a :href="book.url" target="_blank">Link</a></p>
+                    <img :src="book.img" :alt="book.title" style="width: 100px;height: 100px;">
+                </li>
+            </ul>
+        </div>
+        <button @click="age++">Increase age</button>
+        <button @click="age--">Decrease age</button>
+        <button @click="changeName('La biblia en verso')">Cambiar género</button>
+        <button @click="toogleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+        </button>
+        <p v-show="showBooks">Showing books</p>
+        <div class="master-box">
+            <div class="box" @mouseover="handleEvent($event, 5)">mouseover (enter)</div>
+            <div class="box" @mouseleave="handleEvent">mouseleave</div>
+            <div class="box" @dblclick="handleEvent">doubleclick</div>
+            <div class="box" @mousemove="handleMousemove">position - {{x}} / {{y}}</div>
+        </div>
+    </div>
+    <h2>App #2</h2>
+    <div id="app2">
+
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3.0.2"></script>
+<script src="/app.js"></script>
+</html>
