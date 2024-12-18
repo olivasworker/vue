@@ -1,0 +1,7 @@
+{
+    "jobs": [
+        {"id": 1, "name": "front-end developer", "details": "my duty is choose the correct color :v"},
+        {"id": 2, "name": "backend-end developer", "details": "anyone is going to value my job :v"},
+        {"id": 3, "name": "fullstack developer", "details": "I'm going to do twice as much work and to have same salary :V"}
+    ]
+}

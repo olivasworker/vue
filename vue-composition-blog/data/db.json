@@ -1,0 +1,20 @@
+{
+    "posts" : [
+        {
+            "id": 1,
+            "title": "10 best beaches in Thailand",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius. Nulla facilisi morbi tempus iaculis urna id volutpat. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Porta nibh venenatis cras sed felis eget. Lacus vestibulum sed arcu non odio euismod. In massa tempor nec feugiat nisl pretium fusce id. Odio euismod lacinia at quis risus sed vulputate. Morbi enim nunc faucibus a pellentesque sit amet portt",
+            "tags": [
+                "beach", "tailand", "ranking"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "10 best temples in the Asian continent",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum varius. Nulla facilisi morbi tempus iaculis urna id volutpat. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Porta nibh venenatis cras sed felis eget. Lacus vestibulum sed arcu non odio euismod. In massa tempor nec feugiat nisl pretium fusce id. Odio euismod lacinia at quis risus sed vulputate. Morbi enim nunc faucibus a pellentesque sit amet porttitor. Condimentum id venenatis a condimentum. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Faucibus pulvinar elementum integer enim neque v",
+            "tags": [
+                "temple", "tailand", "ranking"
+            ]
+        }
+    ]
+}
